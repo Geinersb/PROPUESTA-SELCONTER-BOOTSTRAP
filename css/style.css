@@ -9,7 +9,8 @@
     --bg-head : #1C6756;
     --primary-color: #13bf58;
     --bg-body: #1e1e20;
- 
+ --fontsize-title: 40px;
+ --fontsize-parrafos:20px;
 
 
 }
@@ -33,7 +34,15 @@ nav.bg-page{
     background: var(--bg-head);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .navbar-nav {
+    margin-left: auto; /* Mueve los enlaces al extremo derecho */
+  }
 
 nav.bg-page ul li a{
     color: white;
@@ -62,7 +71,7 @@ nav.bg-page ul li a:hover::after{
 }
 
 #hero{
-    padding: 160px 0;
+    padding: 210px 0;
 }
 
 #hero .cont-foto {
@@ -109,6 +118,171 @@ width: 500px;
     color: #fff;
     font-size: 25px;
 }
+
+/*servicios*/
+
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 50px 0 100px;
+    text-align: center;
+}
+
+#servicios h2{
+    color: #fff;
+    font-size:var(--fontsize-title) ;
+    font-weight: 700;
+}
+
+#servicios p{
+    color: #fff;
+    font-size: var(--fontsize-parrafos);
+}
+
+#servicios .row{
+    padding: 70px;
+}
+
+.card-services {
+    height: 100%; /* Asegura que las tarjetas ocupen el 100% de la altura del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+#servicios .card-services{
+    
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    transition: .4s;
+    margin: 0 auto;
+   
+  
+}
+
+#servicios .card-services:hover{
+background: var(--bg-head);
+}
+
+#servicios .card-services img{
+    background: #fff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#servicios .card-services h3{
+    text-align: right;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#servicios .card-services h4{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+#servicios .card-services p{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 5px;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#servicios .card-services a{
+    color: var(--primary-color);
+text-align: left;
+font-size: 16px;
+
+}
+
+/*MARCAS*/
+
+#marcas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 50px 0 150px;
+}
+
+#marcas h2{
+    font-size: var(--fontsize-title);
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#marcas h2::after{
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 55%;
+}
+
+#marcas .card-marcas{
+    
+    border-radius: 4px;
+    position: relative;
+}
+
+#marcas .card-marcas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0 ;
+}
+
+#marcas .card-marcas .cont-info{
+    background: #292c36;
+    padding: 14px;
+    transition: .4s;
+    border-radius: 0 0 5px 5px;
+}
+
+#marcas .card-marcas .cont-info:hover{
+    background: var(--bg-head);
+}
+
+.card-marcas .cont-info{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-marcas .cont-info p{
+    color: #fff;
+    font-size: var(--fontsize-parrafos);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .btn-wsp{
